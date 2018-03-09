@@ -29,3 +29,18 @@ In addition to typing values at the prompt, you can create a `terraform.tfvars` 
 primary_domain = "example.com"
 secondary_domain = "www.example.com"
 ```
+
+If AWS is not your domain registrar, you will need to set your domain's name servers
+to AWS name servers associated with your hosted zone. Terraform will output those
+automatically:
+
+```
+Outputs:
+
+name_servers = [
+    ns-1500.awsdns-59.org,
+    ns-1595.awsdns-07.co.uk,
+    ns-619.awsdns-13.net,
+    ns-63.awsdns-07.com
+]
+```
