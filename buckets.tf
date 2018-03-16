@@ -18,9 +18,9 @@ resource "aws_s3_bucket" "secondary_domain" {
 
 # Hello, world HTML file
 resource "aws_s3_bucket_object" "index_html" {
-  bucket = "${aws_s3_bucket.primary_domain.id}"
-  key = "index.html"
-  source = "index.html"
-  acl = "public-read"
+  bucket       = "${aws_s3_bucket.primary_domain.id}"
+  key          = "index.html"
+  source       = "index.html"
+  acl          = "public-read"
   content_type = "text/html"
 }

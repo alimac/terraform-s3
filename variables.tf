@@ -1,7 +1,7 @@
 variable "primary_domain" {
-    description = "Primary domain"
+  description = "Primary domain"
 }
 
 variable "secondary_domain" {
-    description = "Secondary domain"
+  description = "Secondary domain"
 }
